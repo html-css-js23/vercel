@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f1a15" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#e9ede6" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Briefing">
+<title>Daily Briefing</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header class="hero" id="hero" aria-live="polite">
+  <p class="hero-when" id="heroWhen">&nbsp;</p>
+  <h1 class="hero-title" id="heroTitle">Loading</h1>
+  <p class="hero-sub" id="heroSub"></p>
+  <div class="bar" id="heroBar" hidden><span id="heroFill"></span></div>
+</header>
+
+<main>
+  <section id="view-today" class="view" aria-label="Today's lessons"></section>
+  <section id="view-next" class="view" aria-label="Next school day" hidden></section>
+  <section id="view-mail" class="view" aria-label="Email summaries" hidden></section>
+</main>
+
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button role="tab" id="tab-today" aria-selected="true" data-view="today">Today</button>
+  <button role="tab" id="tab-next" aria-selected="false" data-view="next">Next day</button>
+  <button role="tab" id="tab-mail" aria-selected="false" data-view="mail">Mail<span class="badge" id="mailBadge" hidden></span></button>
+</nav>
+<script src="/app.js"></script>
+</body>
+</html>

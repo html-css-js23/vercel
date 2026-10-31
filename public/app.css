@@ -1,0 +1,93 @@
+:root {
+  --bg: #0f1a15; --surface: #17251e; --line: #2a3b32;
+  --text: #eef2ea; --muted: #93a79b; --accent: #ffc72c; --on-accent: #1a1400;
+  --px: 1.7px; /* height per minute of lesson time */
+  --tabs-h: 64px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #e9ede6; --surface: #f7f9f4; --line: #c9d2c5;
+    --text: #14211a; --muted: #5a6c61; --accent: #ffc72c; --on-accent: #1a1400;
+    color-scheme: light;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-optical-sizing: auto; font-size: 17px; line-height: 1.4;
+  padding: env(safe-area-inset-top) 0 calc(var(--tabs-h) + env(safe-area-inset-bottom) + 24px);
+  min-height: 100dvh; -webkit-tap-highlight-color: transparent;
+}
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+/* Hero: the one loud thing */
+.hero { padding: 28px 20px 22px; max-width: 640px; margin: 0 auto; }
+.hero-when { margin: 0 0 6px; color: var(--muted); font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.hero-title {
+  margin: 0; font-weight: 800; font-stretch: 78%; letter-spacing: -0.02em;
+  font-size: clamp(46px, 15vw, 84px); line-height: .95; text-wrap: balance;
+}
+.hero-sub { margin: 14px 0 0; font-size: 19px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.bar { margin-top: 18px; height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.bar span { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 4px; transition: width .6s ease; }
+
+.view { max-width: 640px; margin: 0 auto; padding: 8px 20px 0; }
+.view[hidden] { display: none; }
+
+/* Timeline: block height is proportional to lesson length */
+.tl { position: relative; margin-top: 8px; }
+.row { position: relative; display: grid; grid-template-columns: 54px 1fr; column-gap: 12px; }
+.t { padding-top: 12px; text-align: right; font-size: 14px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.lesson {
+  min-height: 44px; margin: 3px 0; padding: 10px 14px; border-radius: 14px;
+  background: var(--surface); border: 1.5px solid var(--line);
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+}
+.lesson h3 { margin: 0; font-size: 19px; font-weight: 700; line-height: 1.2; letter-spacing: -0.005em; }
+.lesson .meta { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; margin-top: 2px; }
+.room { flex: none; font-weight: 700; font-size: 15px; padding: 3px 9px; border-radius: 8px; border: 1.5px solid var(--line); font-variant-numeric: tabular-nums; }
+.lesson.past { opacity: .5; }
+.lesson.now { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.lesson.now .meta { color: var(--on-accent); opacity: .75; }
+.lesson.now .room { border-color: var(--on-accent); }
+.gap { padding: 2px 0 2px 66px; color: var(--muted); font-size: 13px; }
+.nowline { position: absolute; left: 0; width: 64px; height: 0; border-top: 3px solid var(--accent); z-index: 2; pointer-events: none; }
+.nowline::before { content: ''; position: absolute; left: 58px; top: -8px; width: 13px; height: 13px; border-radius: 50%; background: var(--accent); }
+.empty { padding: 28px 0; color: var(--muted); font-size: 18px; max-width: 30ch; }
+
+/* Mail: a divided list, not a card grid */
+.mail-head { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0 10px; color: var(--muted); font-size: 14px; }
+.mail-list { list-style: none; margin: 0; padding: 0; }
+.mail-group { margin: 22px 0 4px; font-size: 15px; font-weight: 700; color: var(--muted); }
+.mail { border-top: 1.5px solid var(--line); }
+.mail a { display: block; padding: 16px 0 16px 16px; color: inherit; text-decoration: none; position: relative; min-height: 48px; }
+.mail.action a::before { content: ''; position: absolute; left: 0; top: 16px; bottom: 16px; width: 5px; border-radius: 3px; background: var(--accent); }
+.mail .from { font-size: 14px; color: var(--muted); font-weight: 500; }
+.mail .subj { font-size: 19px; font-weight: 700; line-height: 1.2; margin: 2px 0 4px; letter-spacing: -0.005em; }
+.mail .sum { margin: 0; font-size: 16px; line-height: 1.45; max-width: 60ch; }
+.mail .open { display: inline-block; margin-top: 8px; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.mail.minor .subj { font-size: 16px; }
+.mail.minor .sum { color: var(--muted); font-size: 15px; }
+.mail a:active { background: var(--surface); }
+
+/* Tabs: bottom, thumb reach */
+.tabs {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-top: 1.5px solid var(--line);
+}
+.tabs button {
+  height: 48px; border: 0; border-radius: 14px; background: transparent; font-weight: 700; font-size: 16px; color: var(--muted);
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer;
+}
+.tabs button[aria-selected="true"] { background: var(--accent); color: var(--on-accent); }
+.badge { min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--text); color: var(--bg); font-size: 13px; line-height: 22px; text-align: center; }
+.tabs button[aria-selected="true"] .badge { background: var(--on-accent); color: var(--accent); }
+@media (min-width: 700px) { .tabs { left: 50%; right: auto; width: 600px; transform: translateX(-50%); border-radius: 18px 18px 0 0; border: 1.5px solid var(--line); border-bottom: 0; } }
+@media (prefers-reduced-motion: reduce) { .bar span { transition: none; } }
