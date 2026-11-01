@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T02:06:51Z",
+ "updated": "2026-11-01T08:16:10Z",
  "items": [
   {
    "from": "Google",
@@ -13,6 +13,13 @@
    "subject": "Review Data Mapper for Mailchimp permissions and access",
    "summary": "The Data Mapper for Mailchimp app updated and wants new permissions on two Stripe accounts (Lemonade Stand, PAID-POS). You need to review and accept them for it to keep working.",
    "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880477768101451629",
+   "action": true
+  },
+  {
+   "from": "Vultr",
+   "subject": "Vultr.com: Cloud Server Activated",
+   "summary": "Five 'activated' notices today: a 4 GB server in Frankfurt (germany-main, repeated 4 times) and a 1 GB server in New Jersey (newyork). Check these are yours; if not, review your Vultr account.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880634354807953220",
    "action": true
   },
   {
@@ -174,6 +181,34 @@
    "subject": "How to gain 100k followers in 10 days... and keep them",
    "summary": "Marketing newsletter.",
    "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880476421725449376",
+   "action": false
+  },
+  {
+   "from": "TikTok",
+   "subject": "Reposted video digest",
+   "summary": "TikTok digest of a video reposted by an account you follow.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880631212602025057",
+   "action": false
+  },
+  {
+   "from": "Twinkl",
+   "subject": "New resources",
+   "summary": "Twinkl teaching-resources newsletter.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880634840287722827",
+   "action": false
+  },
+  {
+   "from": "Temu",
+   "subject": "Promo",
+   "summary": "Another Temu promo, one of several this week.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880630311888029430",
+   "action": false
+  },
+  {
+   "from": "Social Deal",
+   "subject": "Deal mailing",
+   "summary": "Dutch deal-site promo, another from them today.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880636774371974364",
    "action": false
   }
  ]
