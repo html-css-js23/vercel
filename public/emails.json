@@ -1,13 +1,6 @@
 {
- "updated": "2026-10-31T21:55:00Z",
+ "updated": "2026-11-01T02:06:51Z",
  "items": [
-  {
-   "from": "Hansel & Gretel (weebor.net)",
-   "subject": "Reminder: Rehearsal tomorrow",
-   "summary": "Rehearsal was Sat 31 Oct at 09:00 in the Main Hall / Stage. Already past.",
-   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880465372507073303",
-   "action": false
-  },
   {
    "from": "Google",
    "subject": "Security alert",
@@ -23,11 +16,18 @@
    "action": true
   },
   {
+   "from": "Hansel & Gretel (weebor.net)",
+   "subject": "Reminder: Rehearsal tomorrow",
+   "summary": "Rehearsal was Sat 31 Oct at 09:00 in the Main Hall / Stage. Already past.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880465372507073303",
+   "action": false
+  },
+  {
    "from": "ARC announcements",
    "subject": "All matches are going to be moved back 30 minutes to 1 hour",
    "summary": "Every match is pushed back by 30 to 60 minutes.",
    "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880471149265691673",
-   "action": true
+   "action": false
   },
   {
    "from": "ARC matches",
@@ -125,6 +125,55 @@
    "subject": "Je loopt deals mis!",
    "summary": "Dutch deal-site nudge. Two more promos from them in the last two days.",
    "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880589959949780508",
+   "action": false
+  },
+  {
+   "from": "Vultr",
+   "subject": "Vultr.com: New Invoice - My Org",
+   "summary": "New invoice for $1.66. Your account credit covers it, so no deposit is needed.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880612055895462405",
+   "action": false
+  },
+  {
+   "from": "Live Nation",
+   "subject": "JUST ANNOUNCED: Diljit Dosanjh",
+   "summary": "Ticket announcement for a Diljit Dosanjh show.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880491809159042311",
+   "action": false
+  },
+  {
+   "from": "Aura MENA",
+   "subject": "Thank you for using Aura at Pinkberry",
+   "summary": "Receipt-style thank you for a Pinkberry purchase with Aura loyalty.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880483241495583813",
+   "action": false
+  },
+  {
+   "from": "Majid Al Futtaim",
+   "subject": "Are you leaving rewards behind?",
+   "summary": "Loyalty program nudge to use your rewards.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880481812439035397",
+   "action": false
+  },
+  {
+   "from": "Shiseido (MAF)",
+   "subject": "25% OFF EVERYTHING!",
+   "summary": "Shiseido sale, 25% off.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880450426146229763",
+   "action": false
+  },
+  {
+   "from": "Talabat",
+   "subject": "These favorites are just too good!",
+   "summary": "Food delivery promo.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880466056767323479",
+   "action": false
+  },
+  {
+   "from": "ManyChat",
+   "subject": "How to gain 100k followers in 10 days... and keep them",
+   "summary": "Marketing newsletter.",
+   "url": "https://mail.google.com/mail/?authuser=alexanderdrakeverschueren@gmail.com#all/thread-f:1880476421725449376",
    "action": false
   }
  ]
